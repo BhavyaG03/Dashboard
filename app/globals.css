@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .this{
+    @apply flex gap-2
+  }
+  .more{
+    @apply flex justify-center items-center md:ml-8 rounded-full w-10 h-5 bg-[#E328AF] text-white text-[10px]
+  }
+  .get{
+    @apply pl-10 text-[12px] md:text-[15px] text-[#211A75] md:text-white text-start 
+  }
+  /* This will target the thumb part of the scrollbar */
+.sidebar::-webkit-scrollbar-thumb {
+  @apply bg-purple-600 rounded;
+}
+
+/* This will target the track part of the scrollbar */
+.sidebar::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+/* This sets the width of the scrollbar */
+.sidebar::-webkit-scrollbar {
+  width: 4px;
+  height: 5px;
+}
+
+/* If you also want to style it for Firefox */
+.sidebar {
+  scrollbar-color: #6B7280 #1F2937;
+  scrollbar-width: thin;
+}
+
+}
